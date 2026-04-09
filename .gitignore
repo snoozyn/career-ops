@@ -36,3 +36,98 @@ node_modules/
 .claude/memory/
 career-dashboard
 package-lock.json
+
+# =============================================
+# Career-Ops Project .gitignore
+# =============================================
+
+# Personal configuration files - NEVER commit these
+portals.yml
+profile.yml
+profiles.yml
+config/profile.yml
+config/portals.yml
+
+# Any local config overrides
+*.local.yml
+*.local.yaml
+
+# Credentials and sensitive data
+.env
+.env.*
+credentials.json
+secrets.json
+*.pem
+*.key
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-*
+
+# Python / Virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
+.env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Build and cache directories
+__pycache__/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.coverage.*
+*.cover
+.hypothesis/
+
+# Output / Generated files
+*.pdf
+*.docx
+output/
+results/
+dist/
+build/
+
+# If you generate resumes or reports
+resumes/
+generated/
+exports/
+
+# Optional: Ignore everything except these important files
+# (Uncomment the section below if you want to be very strict)
+
+# !.gitignore
+# !README.md
+# !*.py
+# !requirements.txt
+# !portals.example.yml
+# !profile.example.yml
